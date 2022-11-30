@@ -7,8 +7,15 @@ function excluirJogo(idJogo) {
 }
 
 
-function removeErrorMessage() {
+function removeErrorMessageIndex() {
     let errorMessage = document.getElementById("erro-index")
+
+    if (errorMessage != null){
+        errorMessage.remove()
+    }
+}
+function removeMessagErrorIdioma() {
+    let errorMessage = document.getElementById("erro-idioma")
 
     if (errorMessage != null){
         errorMessage.remove()

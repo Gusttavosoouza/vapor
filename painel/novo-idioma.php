@@ -8,12 +8,12 @@
         <div class="row">
             <div class="input-container quarter">
                 <label for="idiom">Idioma</label>
-                <input name="idiom" id="idiom" class="row-input" type="text">
+                <input onclick="removeMessagErrorIdioma()" name="idiom" id="idiom" class="row-input" type="text">
             </div>
         </div>
 
         <?php if($error != null) { ?>
-            <div class="row error-message"><?=$error?></div>
+            <div id="erro-idioma" class="row error-message"><?=$error?></div>
         <?php } ?>
 
         <div class="row row-button">
