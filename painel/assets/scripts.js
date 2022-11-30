@@ -5,3 +5,12 @@ function excluirJogo(idJogo) {
         window.open("excluir-jogo.php?id=" + idJogo,"_SELF")
     }
 }
+
+
+function removeErrorMessage() {
+    let errorMessage = document.getElementById("erro-index")
+
+    if (errorMessage != null){
+        errorMessage.remove()
+    }
+}
