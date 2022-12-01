@@ -21,3 +21,10 @@ function removeMessagErrorIdioma() {
         errorMessage.remove()
     }
 }
+function removeMessagErrorCategoria() {
+    let errorMessage = document.getElementById("erro-categoria")
+
+    if (errorMessage != null){
+        errorMessage.remove()
+    }
+}

@@ -8,12 +8,12 @@
         <div class="row">
             <div class="input-container quarter">
                 <label for="category">Categoria</label>
-                <input name="category" id="category" class="row-input" type="text">
+                <input onclick="removeMessagErrorCategoria()" name="category" id="category" class="row-input" type="text">
             </div>
         </div>
 
         <?php if($error != null) { ?>
-            <div class="row error-message"><?=$error?></div>
+            <div id="erro-categoria" class="row error-message"><?=$error?></div>
         <?php } ?>
 
         <div class="row row-button">
