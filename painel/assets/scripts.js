@@ -35,3 +35,10 @@ function removeMessagErrorPlataforma() {
         errorMessage.remove()
     }
 }
+function removeMessagErrorJogo() {
+    let errorMessage = document.getElementById("erro-jogo")
+
+    if (errorMessage != null){
+        errorMessage.remove()
+    }
+}

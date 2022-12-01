@@ -8,7 +8,7 @@ $categorias = mysqli_query($conn, $query_categoria);
 ?>
 
 <div id="content-container">
-    <form action="cadastrar-jogo.php" method="post">
+    <form onclick="removeMessagErrorJogo()"cadastrar-jogo.php" method="post">
         <div class="row">
 
             <div class="input-container quarter">
@@ -71,7 +71,7 @@ $categorias = mysqli_query($conn, $query_categoria);
 
 
         <?php if ($error != null) { ?>
-            <div class="row error-message"><?= $error ?></div>
+            <div id="erro-jogo"class="row error-message"><?= $error ?></div>
         <?php } ?>
 
         <div class="row row-button">
