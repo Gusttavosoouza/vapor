@@ -1,12 +1,3 @@
-function excluirJogo(idJogo) {
-    let excluirJogo = confirm ("Realmente deseja excluir esse jogo?")
-
-    if (excluirJogo == true){
-        window.open("excluir-jogo.php?id=" + idJogo,"_SELF")
-    }
-}
-
-
 function removeErrorMessageIndex() {
     let errorMessage = document.getElementById("erro-index")
 
@@ -40,5 +31,20 @@ function removeMessagErrorJogo() {
 
     if (errorMessage != null){
         errorMessage.remove()
+    }
+}
+
+function excluirJogo(idJogo) {
+    let excluirJogo = confirm ("Realmente deseja excluir esse jogo?")
+
+    if (excluirJogo == true){
+        window.open("excluir-jogo.php?id=" + idJogo,"_SELF")
+    }
+}
+function excluirPlataforma(idPlataforma) {
+    let excluirJogo = confirm ("Realmente deseja excluir essa plataforma?")
+
+    if (excluirJogo == true){
+        window.open("excluir-plataforma.php?id=" + idPlataforma,"_SELF")
     }
 }
