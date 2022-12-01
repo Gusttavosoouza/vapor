@@ -13,6 +13,6 @@ if ($plataforma == null) {
    mysqli_query($conn, $criar_plataforma);
    header("location: plataformas.php");
 } else {
-    header("location: nova-plataforma.php?error=Esta plataforma já está cadastrada");
+    header("location: nova-plataforma.php?error=Está plataforma já está cadastrada");
 }
 ?>

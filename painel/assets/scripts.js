@@ -28,3 +28,10 @@ function removeMessagErrorCategoria() {
         errorMessage.remove()
     }
 }
+function removeMessagErrorPlataforma() {
+    let errorMessage = document.getElementById("erro-plataforma")
+
+    if (errorMessage != null){
+        errorMessage.remove()
+    }
+}
