@@ -48,3 +48,10 @@ function excluirPlataforma(idPlataforma) {
         window.open("excluir-plataforma.php?id=" + idPlataforma,"_SELF")
     }
 }
+function excluirIdioma(idIdioma) {
+    let excluirJogo = confirm ("Realmente deseja excluir este idioma?")
+
+    if (excluirJogo == true){
+        window.open("excluir-idioma.php?id=" + idIdioma,"_SELF")
+    }
+}
