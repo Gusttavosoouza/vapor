@@ -25,7 +25,7 @@ $error_message = $_GET['error'] ?? null;
                 <img src="./public/images/new img.png" alt="Logo" width="100px">
                 <div class="coluna-login">
                     <div class="input">
-                        <input onclick="removeErrorMessage()" placeholder="E-mail" type="email" name="email" id="email" required>
+                        <input onclick="removerElementoPorId('erro-index')" placeholder="E-mail" type="email" name="email" id="email" required>
                     </div>
                 </div>
                 <div class="coluna-login">
