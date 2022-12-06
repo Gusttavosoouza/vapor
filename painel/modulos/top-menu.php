@@ -31,5 +31,14 @@ require('conexao.php');
 
             <div id="header">
                 <div id="name">Dashboard</div>
-                <div id="hello">Olá, <b>Administrador</b></div>
+                <div id="hello">Olá, <b>Administrador</b> - <span id="clock"></span></div>
             </div>
+
+            <script>    
+                atualizarCor()
+                updateClock()
+            </script>
+
+          
+            
+          
